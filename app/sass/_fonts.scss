@@ -1,0 +1,4 @@
+@import "_mixins/font-face";
+
+@include font-face ("Calibri", "../fonts/Calibri/Calibri-Regular/Calibri-Regular", normal);
+@include font-face ("Calibri", "../fonts/Calibri/Calibri-Bold/Calibri-Bold", 700);
