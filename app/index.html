@@ -375,17 +375,18 @@
                     <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required="">
                     <span class="error-message">Заполните это поле</span>
                   </div>
-    
-                  <div class="form__select">
-                    <a href="#">Выберите услугу</a>
-                    <select>
-                      <option value="1"></option>
-                      <option value="2"></option>
-                      <option value="3"></option>
-                      <option value="4"></option>
-                    </select>
-                  </div>
 
+                  <div class="dropdown">
+                    <div class="dropdown-toggle" id="serviceDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span>Выберите услугу</span>
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="serviceDropdownMenu">
+                      <a class="dropdown-item" href="#">Алматы</a>
+                      <a class="dropdown-item" href="#">Астана</a>
+                    </div>
+                  </div>
+    
+                
                   <button class="button ajax-submit" type="submit" id="ostavit_zayavku_uslug">Оставить заявку</button>
                 </div>
                 <div class="form__info">*Ваши данные в безопасности и не будут переданы третьим лицам</div>
@@ -739,6 +740,39 @@
             </div>
             <div class="review__text">Айжамал, добрый вечер! Все замечательно!Долетели хорошо, встретили нас-хорошие люди.Кокосы, ананасы,манго наедаемся. Все понравилось, спасибо! </div>
           </div>
+        </div>
+        <div class="form form--horizontal wow slideInUp">
+          <form action="/mail.php" method="post">
+            <div class="form__title">Уважаемый Клиент! Оставьте свой отзыв!</div>
+            <div class="form__content">    
+              <input type="hidden" name="info" value="Вы не нашли подходящего варианта?
+              Оставьте заявку, и мы подберем для Вас идеальное предложение!">
+              <div class="form__block">
+                <div class="input-div">
+                  <input type="text" class="input" name="name" placeholder="Представьтесь">
+                </div>
+  
+                <div class="input-div">
+                  <input type="email" class="input" name="email" placeholder="Введите e-mail*" required="">
+                  <span class="error-message">Заполните это поле</span>
+                </div>
+  
+                <div class="input-div">
+                  <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required="">
+                  <span class="error-message">Заполните это поле</span>
+                </div>
+  
+                <a href="" class="download">Загрузить фото</a>
+  
+              </div>
+              
+              <textarea class="input" placeholder="Введите текст отзыва*"></textarea>
+
+              
+            </div>
+            <button class="button ajax-submit" type="submit" id="ostavit_otzyv">Оставить отзыв</button>
+            <div class="form__info">*Ваши данные в безопасности и не будут переданы третьим лицам</div>
+          </form>
         </div>
       </div>
     </section>
